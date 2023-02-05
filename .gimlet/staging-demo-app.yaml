@@ -18,13 +18,18 @@ values:
       kubernetes.io/ingress.class: nginx
     host: demo-app.staging.turbopizza.net
     tlsEnabled: true
-  replicas: 2
+  replicas: 5
   resources:
     requests:
       cpu: 20m
       memory: 20Mi
   vars:
     newKey: New Value
+  volumes:
+    - name: data
+      path: /data
+      size: 10Gi
+      storageClass: ""
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
