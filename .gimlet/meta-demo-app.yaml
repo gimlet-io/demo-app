@@ -14,7 +14,7 @@ values:
     host: demo-app6.gimlet.io
     tlsEnabled: true
   vars:
-    dummy: New Value3
+    dummy: New Value4
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
